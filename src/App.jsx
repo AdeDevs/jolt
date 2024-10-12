@@ -115,8 +115,8 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
-            <h3>$34.54 <del>$43.53</del></h3>
+            <h2>Carabiner Set</h2>
+            <h3>$24.54 <del>$33.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(0)} src={addedCarts[0] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
@@ -127,7 +127,7 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
+            <h2>Off-Road Shoulder Bag</h2>
             <h3>$34.54 <del>$43.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(1)} src={addedCarts[1] ? addedCart : cart} alt="cart icon"/> </span>
@@ -139,8 +139,8 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
-            <h3>$34.54 <del>$43.53</del></h3>
+            <h2>Cozy Indoor Sandals</h2>
+            <h3>$40.54 <del>$45.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(2)} src={addedCarts[2] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
@@ -152,8 +152,8 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
-            <h3>$34.54 <del>$43.53</del></h3>
+            <h2>Thermo Cup</h2>
+            <h3>$14.54 <del>$23.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(3)} src={addedCarts[3] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
@@ -164,7 +164,7 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
+            <h2>Outdoor Vest</h2>
             <h3>$34.54 <del>$43.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(4)} src={addedCarts[4] ? addedCart : cart} alt="cart icon"/> </span>
@@ -177,8 +177,8 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
-            <h3>$34.54 <del>$43.53</del></h3>
+            <h2>Face Cap</h2>
+            <h3>$10.54 <del>$15.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(5)} src={addedCarts[5] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
@@ -189,7 +189,7 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
+            <h2>Fuzzy Cardigan</h2>
             <h3>$34.54 <del>$43.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(6)} src={addedCarts[6] ? addedCart : cart} alt="cart icon"/> </span>
@@ -201,8 +201,8 @@ function App() {
         </div>
         <div className="product-info">
           <aside>
-            <h2>Long Sleeve Red Shirt</h2>
-            <h3>$34.54 <del>$43.53</del></h3>
+            <h2>Swivel Chair</h2>
+            <h3>$54.54 <del>$63.53</del></h3>
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(7)} src={addedCarts[7] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
