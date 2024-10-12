@@ -7,6 +7,11 @@ import camoHoodieImage from './assets/camohoodie.png';
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("Categories");
+  const [showMore, setShowMore] = useState(false);
+
+  const readMore = () => {
+    setShowMore(!showMore);
+  };
 
   function close(menu) {
     setMenuOpen(false);
@@ -18,9 +23,6 @@ function App() {
   }
 
   const [currentImage, setCurrentImage] = useState(blackHoodieImage);
-
-  // State for the "read more" toggle
-  const [showMore, setShowMore] = useState(false);
 
   // Handlers for changing hoodie images
   const blackHoodie = () => setCurrentImage(blackHoodieImage);
@@ -137,20 +139,18 @@ function App() {
           </ul>
         </div>
         <div className="desc">
-          <h1>Descriptions</h1>
-          <p>
-            Introducing the Boa Fleece Winter Jacket, designed to keep you warm and comfortable during the coldest winter days. 
-            Crafted from high-quality fleece material, this jacket offers superior insulation and softness, making it the perfect 
-            choice for outdoor activities or everyday wear. The jacket features a stylish and functional design, with a 
-            <span id="dots">...</span>
-            {showMore && (
-              <span id="more">
-                fleece-lined hood, durable zippers, and spacious pockets. Stay warm and look great this winter with our Boa Fleece Winter Jacket.
-              </span>
-            )}
-            <button onClick={toggleReadMore} id="morebtn">{showMore ? "less" : "more"}</button>
-          </p>
-        </div>
+        <h1>Descriptions</h1>
+        <p>
+          Introducing the Boa Fleece Winter Jacket, designed to keep you warm and comfortable during the coldest winter days. 
+          Crafted from high-quality fleece material, this jacket offers superior insulation and softness, making it the perfect 
+          choice for outdoor activities or everyday wear. The jacket features a stylish and functional design, with a&nbsp;
+          <span id="dots">{showMore ? "" : "..."}</span>
+          <span id="more" style={{ display: showMore ? "inline" : "none" }}>
+            fleece-lined hood, durable zippers, and spacious pockets. Stay warm and look great this winter with our Boa Fleece Winter Jacket.&nbsp;
+          </span>
+          <button onClick={readMore} id="morebtn">{showMore ? "Read Less" : "Read More"}</button>
+        </p>
+      </div>
         <div className="info">
           <h1>Available Colors</h1>
           <ul className="colors">
