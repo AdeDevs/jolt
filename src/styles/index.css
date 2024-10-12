@@ -260,7 +260,7 @@ main .products-box {
 .products .product-image1, .product-image2, .product-image3, .product-image4, .product-image5, .product-image6, .product-image7, .product-image8 {
   background-image: url(../assets/carabiner-removebg-preview.png);
   background-position: center;
-  background-size: 200px;
+  background-size: 180px;
   background-color: #f2f2f2;
   border-radius: 30px;
   background-repeat: no-repeat;
@@ -273,10 +273,12 @@ main .products-box {
 
 .product-image2 {
   background-image: url(../assets/pouch.png);
+  background-size: 180px;
 }
 
 .product-image3 {
   background-image: url(../assets/sandals.png);
+  background-size: 180px;
 }
 
 .product-image4 {
@@ -285,6 +287,7 @@ main .products-box {
 
 .product-image5 {
   background-image: url(../assets/jacket.png);
+  background-size: 180px;
 }
 
 .product-image6 {
@@ -297,6 +300,7 @@ main .products-box {
 
 .product-image8 {
   background-image: url(../assets/swivel.png);
+  background-size: 180px;
 }
 
 #heart {
