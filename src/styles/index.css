@@ -174,17 +174,19 @@ header nav ul li ion-icon {
   left: 0;
   width: fit-content;
   margin: 0 auto;
-  padding: 13px 35px;
+  padding: 10px 50px;
   font-size: 15px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
   overflow: hidden;
   transition: color 0.4s ease-in-out;
+  font-family: "Poppins", sans-serif;
   z-index: 1;
 }
 
-button::before {
+
+.landing button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -196,32 +198,12 @@ button::before {
   z-index: -1;
 }
 
-button:hover::before {
-  left: 0; /* Move the background color from left to right */
-}
-
-button:hover {
-  color: #fff; /* Change the text color on hover */
-}
-
-.landing button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #3b93ff;
-  transition: left 0.8s cubic-bezier(0, 0, 0.23, 1);
-  z-index: -2;
-}
-
 .landing button:hover::before {
-  left: 0; /* Move the background color from left to right */
+  left: 0;
 }
 
 .landing button:hover {
-  color: #ece2e2; /* Change the text color on hover */
+  color: #ffffff;
 }
 
 main {
@@ -231,7 +213,7 @@ main {
   background-color: #fff;
 }
 
-main h1 {
+main>h1 {
   font-size: 30px;
   margin: 30px 0 0 0;
   font-family: "Abel", sans-serif;
@@ -361,6 +343,239 @@ main .products-box {
   color: grey;
 }
 
+#more-btn {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 8px 50px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+}
+
+
+#more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.8s cubic-bezier(0, 0, 0.23, 1);
+  z-index: -1;
+}
+
+#more-btn:hover::before {
+  left: 0;
+}
+
+#more-btn:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.mid-section {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  justify-content: space-between;
+  margin: 80px 0 10px 0;
+}
+
+.mid-section .sale {
+  background-image: url(../assets/sal.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.mid-section .new-store {
+  width: 25%;
+}
+
+.new-store h1 {
+  font-size: 25px;
+}
+
+.new-store p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.new-store h2 {
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.new-store h3 {
+  font-size: 4em;
+}
+
+.new-store button {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 50px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+}
+
+.new-store button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.8s cubic-bezier(0, 0, 0.23, 1);
+  z-index: -1;
+}
+
+.new-store button:hover::before {
+  left: 0;
+}
+
+.new-store button:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.featured-collections {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.featured-collections > h1 {
+  font-size: 25px;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
+
+.featured-collections > p {
+  font-size: 13px;
+  color: #7b7b7b;
+  text-align: center;
+}
+
+.featured-collections .collections {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.collections > div {
+  margin: 10px auto;
+  width: 32%;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  position: relative;
+  color: #fff;
+  transition: 300ms;
+  text-align: center;
+}
+
+.collections > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; 
+  border-radius: 20px;
+}
+
+.collections > div:hover .hover-details {
+  display: block;
+}
+
+.collections div h1 {
+  font-size: 25px;
+  z-index: 2;
+}
+
+.collection-details {
+  z-index: 2;
+}
+
+.hover-details {
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+  font-size: 13px;
+}
+
+.hover-details #more-btn{
+  background-color: #fff;
+  color: #000;
+}
+
+.hover-details #more-btn::before {
+  background-color: #000;
+}
+
+.hover-details #more-btn:hover {
+  color: #fff;
+}
+
+.collections .headwear {
+  background-image: url(../assets/cap.png);
+}
+.collections .jacket {
+  background-image: url(../assets/jacket-removebg-preview.png);
+}
+.collections .footwear {
+  background-image: url(../assets/sandals.png);
+}
+.collections .accessories {
+  background-image: url(../assets/carabiner-removebg-preview.png);
+  background-size: 150px;
+}
+.collections .bags {
+  background-image: url(../assets/bag.png);
+}
+.collections .bottoms {
+  background-image: url(../assets/shoe.png);
+}
+
+
 @media (max-width: 850px) {
   #search,
   #cart {
@@ -368,6 +583,18 @@ main .products-box {
   }
   .menu {
     margin-left: 20px;
+  }
+  .mid-section .sale {
+    width: 60%;
+  }
+  .mid-section .new-store {
+    width: 35%;
+  }
+  .featured-collections {
+    padding: 7px;
+  }
+  .collections > div {
+    width: 48%;
   }
 }
 
@@ -434,6 +661,23 @@ main .products-box {
   .products-box .products {
     width: 49%;
   }
+  #more-btn {
+    margin: 10px auto;
+  }
+  .mid-section {
+    padding: 10px 5px;
+    margin-top: 30px;
+  }
+  .mid-section .sale {
+    width: 100%;
+    height: 400px;
+  }
+  .mid-section .new-store {
+    width: 100%;
+  }
+  .featured-collections {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -445,6 +689,9 @@ main .products-box {
     width: 90%;
   }
   .products-box .products {
+    width: 100%;
+  }
+  .collections > div {
     width: 100%;
   }
 }

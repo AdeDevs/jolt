@@ -108,7 +108,7 @@ function App() {
       <h1>Trending Products</h1>
       <p>Our new arrivals are built to withstand your activities while keeping you looking your best</p>
         <div className="products-box">
-        <div className="products">
+          <div className="products">
         <div className="product-image1">
           <button id="limited">Limited</button>
           <span id="heart"> <img onClick={() => toggleLike(0)} src={likedProducts[0] ? likedHeart : heart} alt="heart icon"/> </span>
@@ -120,8 +120,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(0)} src={addedCarts[0] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image2">
           <span id="heart"> <img onClick={() => toggleLike(1)} src={likedProducts[1] ? likedHeart : heart} alt="heart icon"/> </span>
         </div>
@@ -132,8 +132,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(1)} src={addedCarts[1] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image3">
           <span id="heart"> <img onClick={() => toggleLike(2)} src={likedProducts[2] ? likedHeart : heart} alt="heart icon"/> </span>
         </div>
@@ -144,8 +144,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(2)} src={addedCarts[2] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image4">
           <button id="limited">Limited</button>
           <span id="heart"> <img onClick={() => toggleLike(3)} src={likedProducts[3] ? likedHeart : heart} alt="heart icon"/> </span>
@@ -157,8 +157,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(3)} src={addedCarts[3] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image5">
           <span id="heart"> <img onClick={() => toggleLike(4)} src={likedProducts[4] ? likedHeart : heart} alt="heart icon"/> </span>
         </div>
@@ -169,8 +169,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(4)} src={addedCarts[4] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image6">
           <button id="limited">Limited</button>
           <span id="heart"> <img onClick={() => toggleLike(5)} src={likedProducts[5] ? likedHeart : heart} alt="heart icon"/> </span>
@@ -182,8 +182,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(5)} src={addedCarts[5] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image7">
           <span id="heart"> <img onClick={() => toggleLike(6)} src={likedProducts[6] ? likedHeart : heart} alt="heart icon"/> </span>
         </div>
@@ -194,8 +194,8 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(6)} src={addedCarts[6] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
-        </div>
-        <div className="products">
+          </div>
+          <div className="products">
         <div className="product-image8">
           <span id="heart"> <img onClick={() => toggleLike(7)} src={likedProducts[7] ? likedHeart : heart} alt="heart icon"/> </span>
         </div>
@@ -206,7 +206,81 @@ function App() {
           </aside>
           <span id="info-cart"> <img onClick={() => toggleCart(7)} src={addedCarts[7] ? addedCart : cart} alt="cart icon"/> </span>
         </div>
+          </div>
         </div>
+        <button id="more-btn">See More</button>
+        <div className="mid-section">
+          <div className="sale"></div>
+          <div className="new-store">
+            <h1>Find Your Perfect Look At Jolt's Stylish New On Tokyo</h1>
+            <p>
+              Welcome to the newest Jolt outlet in Shibuya, Japan! Step into our stylish and trendy store to discover the latest in fashion and apparel. Come and experience the unique and vibrant atmosphere.
+            </p>
+            <h2>Come and Enjoy Sale!</h2>
+            <h3>50%</h3>
+            <button>See On Maps</button>
+          </div>
+        </div>
+        <div className="featured-collections">
+          <h1>Featured Collections</h1>
+          <p>Dare to mix and match! Check out collection to level up your fashion game</p>
+
+          <div className="collections">
+            <div className="footwear">
+              <div className="collection-details">
+                <h1>Footwear</h1>
+                <div className="hover-details">
+                  <p>Check out our new collections. Get 10% Discount on New Seasons</p>
+                  <button id="more-btn">Disover</button>
+                </div>
+              </div>
+            </div>
+            <div className="jacket">
+            <div className="collection-details">
+                <h1>Jacket</h1>
+                <div className="hover-details">
+                  <p>Check out our new collections. Get 10% Discount on New Seasons</p>
+                  <button id="more-btn">Disover</button>
+                </div>
+              </div>
+            </div>
+            <div className="accessories">
+            <div className="collection-details">
+                <h1>Accessories</h1>
+                <div className="hover-details">
+                  <p>Check out our new collections. Get 10% Discount on New Seasons</p>
+                  <button id="more-btn">Disover</button>
+                </div>
+              </div>
+            </div>
+            <div className="headwear">
+            <div className="collection-details">
+                <h1>Headwear</h1>
+                <div className="hover-details">
+                  <p>Check out our new collections. Get 10% Discount on New Seasons</p>
+                  <button id="more-btn">Disover</button>
+                </div>
+              </div>
+            </div>
+            <div className="bags">
+            <div className="collection-details">
+                <h1>Bags</h1>
+                <div className="hover-details">
+                  <p>Check out our new collections. Get 10% Discount on New Seasons</p>
+                  <button id="more-btn">Disover</button>
+                </div>
+              </div>
+            </div>
+            <div className="bottoms">
+            <div className="collection-details">
+                <h1>Bottoms</h1>
+                <div className="hover-details">
+                  <p>Check out our new collections. Get 10% Discount on New Seasons</p>
+                  <button id="more-btn">Disover</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
