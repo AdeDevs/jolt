@@ -12,11 +12,25 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 75vh;
+  height: fit-content;
   width: 100%;
   margin: 0 auto;
   padding: 10px 20px;
   box-sizing: border-box;
+}
+
+.nav-page {
+  position: relative;
+}
+
+.nav-page header {
+  padding: 10px 20px;
+  height: 7vh;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  position: absolute;
+  background: transparent;
 }
 
 a {
@@ -70,20 +84,20 @@ header nav ul li {
   align-items: center;
   width: fit-content;
   transition: 0.5s ease-in-out;
-  transition-timing-function: ease-in;
-  position: relative;
   cursor: pointer;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(90deg, #a8dadc, #a8dadc, 50%, #ffffff 0);
   background-size: 200% 100%;
   background-position: 100%;
-  position: relative;
+  position: relative; /* Make sure position is relative */
+  z-index: 10; /* Ensure li is on top */
   transition: 0.8s;
-  &:hover {
-    background-position: 0;
-    color: #a8dadc;
-  }
+}
+
+header nav ul li:hover {
+  background-position: 0;
+  color: #a8dadc;
 }
 
 header nav ul li::before {
@@ -115,6 +129,7 @@ header nav ul li.active::before {
   transform: scaleX(1);
 }
 
+
 header nav ul li ion-icon {
   margin-right: 5px;
   color: light;
@@ -131,14 +146,15 @@ header nav ul li ion-icon {
 }
 
 .open-menu {
-  top: 28px;
+  top: 35px;
   right: 9px;
   font-size: 20px;
   transform: translateY(-50%);
+  background-color: green;
 }
 
 .close-menu {
-  top: 11px;
+  top: 12px;
   right: 9px;
 }
 
@@ -150,6 +166,7 @@ header nav ul li ion-icon {
   height: 90%;
   display: flex;
   width: 70%;
+  height: 80vh;
   color: #fff;
   margin: 0 auto;
   align-items: center;
@@ -173,7 +190,7 @@ header nav ul li ion-icon {
   right: 0;
   left: 0;
   width: fit-content;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 10px 50px;
   font-size: 15px;
   border-radius: 30px;
@@ -231,6 +248,7 @@ main>p {
 main .products-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .products-box .products {
@@ -599,14 +617,14 @@ main .products-box {
 
 .footwear {
   height: 39%;
-  background-image: url(../assets/footwear.png);
-  background-size: contain;
-  background-position: top;
+  background-image: url(../assets/footwear-removebg-preview.png);
+  background-size: cover;
+  background-position: 0px 80%;
 }
 
 .headwear {
   height: 59%;
-  background-image: url(../assets/headwears-removebg-preview.png);
+  background-image: url(../assets/headwears.png);
   background-size: cover;
   background-position: top;
 }
@@ -620,8 +638,8 @@ main .products-box {
 
 .bags {
   height: 39%;
-  background-image: url(../assets/bags.png);
-  background-size: contain;
+  background-image: url(../assets/bags-removebg-preview.png);
+  background-size: 100%;
   background-position: center;
 }
 
@@ -873,7 +891,8 @@ footer {
 
 @media (max-width: 850px) {
   #search,
-  #cart {
+  #cart,
+  #login {
     display: none;
   }
   .menu {
@@ -938,7 +957,7 @@ footer {
     padding: 5px;
   }
   header nav ul li:nth-last-child(2) {
-    margin-right: 30px;
+    margin-right: 25px;
   }
   header nav ul li {
     margin: 0;
@@ -966,7 +985,7 @@ footer {
     display: inherit;
   }
   main {
-    padding: 10px 20px;
+    padding: 0px 0px;
   }
   main h1 {
     font-size: 24px;
@@ -1044,6 +1063,9 @@ footer {
 }
 
 @media (max-width:450px) {
+  .landing h1 {
+    font-size: 3em;
+  }
   .lists h1 {
     font-size: 13px;
   }

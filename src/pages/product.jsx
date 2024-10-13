@@ -3,6 +3,11 @@ import blackHoodieImage from '../assets/blackhoodie.png';
 import greyHoodieImage from '../assets/greyhoodie.png';
 import blueHoodieImage from '../assets/bluehoodie.png';
 import camoHoodieImage from '../assets/camohoodie.png';
+import heart from "../assets/heart-outline.svg";
+import likedHeart from "../assets/heart.png";
+import cart from "../assets/cart-outline.svg";
+import addedCart from "../assets/cart.svg";
+import "../styles/products.css";
 
 function ProductsScreen() {
   const [showMore, setShowMore] = useState(false);
@@ -22,10 +27,25 @@ function ProductsScreen() {
   // Handler for toggling the "read more" text
   const toggleReadMore = () => setShowMore(!showMore);
 
+  const [likedProducts, setLikedProducts] = useState(Array(8).fill(false));
+  const [addedCarts, setAddedCart] = useState(Array(8).fill(false));
+
+  // Function to toggle like status
+  const toggleLike = (index) => {
+    const updatedLikes = [...likedProducts]; // Create a copy of the array
+    updatedLikes[index] = !updatedLikes[index]; // Toggle the specific product's liked status
+    setLikedProducts(updatedLikes); // Update the state
+  };
+
+  const toggleCart = (index) => {
+    const updatedCart = [...addedCarts]; // Create a copy of the array
+    updatedCart[index] = !updatedCart[index]; // Toggle the specific product's liked status
+    setAddedCart(updatedCart); // Update the state
+  };
+
   return (
-    <div>
-      <main>
-        <h1>Trending Products</h1>
+    <div className="product-page">
+      <nav></nav>
         <div className="my-product-box">
           <div className="product-nav">
             <ul className="desktop">
@@ -47,7 +67,7 @@ function ProductsScreen() {
               <li onClick={camoHoodie} id="img-box4"></li>
             </ul>
           </div>
-          <div className="product-info">
+          <div className="about-product">
             <div className="title">
               <p>Jolt/Jackets</p>
               <h1>Boa Fleece Jackets</h1>
@@ -122,7 +142,122 @@ function ProductsScreen() {
             </div>
           </div>
         </div>
-      </main>
+        <div className="products-box">
+        <div className="products">
+            <div className="product-image1">
+              <button id="limited">Limited</button>
+              <span id="heart">
+                {" "}
+                <img
+                  onClick={() => toggleLike(0)}
+                  src={likedProducts[0] ? likedHeart : heart}
+                  alt="heart icon"
+                />{" "}
+              </span>
+            </div>
+            <div className="product-info">
+              <aside>
+                <h2>Carabiner Set</h2>
+                <h3>
+                  $24.54 <del>$33.53</del>
+                </h3>
+              </aside>
+              <span id="info-cart">
+                {" "}
+                <img
+                  onClick={() => toggleCart(0)}
+                  src={addedCarts[0] ? addedCart : cart}
+                  alt="cart icon"
+                />{" "}
+              </span>
+            </div>
+          </div>
+          <div className="products">
+            <div className="product-image2">
+              <span id="heart">
+                {" "}
+                <img
+                  onClick={() => toggleLike(1)}
+                  src={likedProducts[1] ? likedHeart : heart}
+                  alt="heart icon"
+                />{" "}
+              </span>
+            </div>
+            <div className="product-info">
+              <aside>
+                <h2>Off-Road Shoulder Bag</h2>
+                <h3>
+                  $34.54 <del>$43.53</del>
+                </h3>
+              </aside>
+              <span id="info-cart">
+                {" "}
+                <img
+                  onClick={() => toggleCart(1)}
+                  src={addedCarts[1] ? addedCart : cart}
+                  alt="cart icon"
+                />{" "}
+              </span>
+            </div>
+          </div>
+          <div className="products">
+            <div className="product-image3">
+              <span id="heart">
+                {" "}
+                <img
+                  onClick={() => toggleLike(2)}
+                  src={likedProducts[2] ? likedHeart : heart}
+                  alt="heart icon"
+                />{" "}
+              </span>
+            </div>
+            <div className="product-info">
+              <aside>
+                <h2>Cozy Indoor Sandals</h2>
+                <h3>
+                  $40.54 <del>$45.53</del>
+                </h3>
+              </aside>
+              <span id="info-cart">
+                {" "}
+                <img
+                  onClick={() => toggleCart(2)}
+                  src={addedCarts[2] ? addedCart : cart}
+                  alt="cart icon"
+                />{" "}
+              </span>
+            </div>
+          </div>
+          <div className="products">
+            <div className="product-image4">
+              <button id="limited">Limited</button>
+              <span id="heart">
+                {" "}
+                <img
+                  onClick={() => toggleLike(3)}
+                  src={likedProducts[3] ? likedHeart : heart}
+                  alt="heart icon"
+                />{" "}
+              </span>
+            </div>
+            <div className="product-info">
+              <aside>
+                <h2>Thermo Cup</h2>
+                <h3>
+                  $14.54 <del>$23.53</del>
+                </h3>
+              </aside>
+              <span id="info-cart">
+                {" "}
+                <img
+                  onClick={() => toggleCart(3)}
+                  src={addedCarts[3] ? addedCart : cart}
+                  alt="cart icon"
+                />{" "}
+              </span>
+            </div>
+          </div>
+        </div>
     </div>
   );
 }
