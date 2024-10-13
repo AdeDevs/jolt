@@ -1,0 +1,123 @@
+.collections1 {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.collections1 .collections-box1 {
+    width: 31%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.collections-box1 > div {
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c8c8c8;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.collections-box1 > div::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.268);
+    position: absolute;
+    border-radius: 20px;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-info {
+    z-index: 2;
+    color: #fff;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hover-info {
+    opacity: 0;
+    max-height: 0; 
+    overflow: hidden; 
+    transition: opacity 0.9s ease, max-height 0.9s ease;
+}
+
+.collections-box1 > div:hover .hover-info {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.collections-box1 > div:hover .text-info {
+    background-image: linear-gradient(#ffffff88, #000000e8);
+}
+.text-info h1 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.text-info p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #d9d9d9;
+}
+
+.text-info button {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    margin: 10px;
+}
+
+.footwear1 {
+    height: 39%;
+    background-image: url(../assets/sandals.png);
+    background-size: 150px;
+}
+
+.headwear1 {
+    height: 59%;
+    background-image: url(../assets/cap.png);
+    background-size: 250px;
+}
+
+.jacket1 {
+    height: 59%;
+    background-image: url(../assets/jacket-removebg-preview.png);
+    background-size: contain;
+}
+
+.bags1 {
+    height: 39%;
+    background-image: url(../assets/pouch.png);
+    background-size: 100px;
+}
+
+.accessories1 {
+    height: 39%;
+    background-image: url(../assets/carabiner-removebg-preview.png);
+    background-size: 150px;
+}
+
+.bottoms1 {
+    height: 59%;
+    background-image: url(../assets/sweater.png);
+    background-size: 270px;
+}
