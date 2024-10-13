@@ -340,6 +340,9 @@ function App() {
             </ul>
           </div>
         </div>
+          <p className="copyright">
+            &#169; 2024 Jolt Studio, Inc. - All Rights Reserved
+          </p>
       </footer>
     </div>
   );

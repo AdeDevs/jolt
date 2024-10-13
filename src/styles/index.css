@@ -717,6 +717,10 @@ footer .newsletter::before {
   border: none;
 }
 
+footer {
+  color: #fff;
+}
+
 .footer-box {
   padding: 30px;
   display: flex;
@@ -844,6 +848,12 @@ footer .newsletter::before {
   &::before {
     background-color: #1DA1F2;
   }
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media (max-width:1055px) {
