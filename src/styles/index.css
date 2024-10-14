@@ -269,6 +269,10 @@ main .products-box {
   border-radius: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  transition: 300ms;
+  &:hover {
+    background-color: #b0b0b0;
+  }
 }
 
 .product-image2 {
