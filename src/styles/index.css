@@ -146,11 +146,10 @@ header nav ul li ion-icon {
 }
 
 .open-menu {
-  top: 35px;
+  top: 33px;
   right: 9px;
   font-size: 20px;
   transform: translateY(-50%);
-  background-color: green;
 }
 
 .close-menu {
@@ -177,6 +176,7 @@ header nav ul li ion-icon {
 .landing h1 {
   font-size: 4em;
   line-height: normal;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
