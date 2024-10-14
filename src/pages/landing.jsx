@@ -48,7 +48,6 @@ function LandingPage() {
         </p>
         <div className="products-box">
           <div className="products">
-            <NavLink to="/product" >
             <div className="product-image1">
               <button id="limited">Limited</button>
               <span id="heart">
@@ -60,10 +59,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Carabiner Set</h2>
+                <NavLink to="/product" >
+                  <h2>Carabiner Set</h2>
+                </NavLink>
                 <h3>
                   $24.54 <del>$33.53</del>
                 </h3>
@@ -79,7 +79,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image2">
               <span id="heart">
                 {" "}
@@ -90,10 +89,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Off-Road Shoulder Bag</h2>
+                <NavLink to="/product">
+                  <h2>Off-Road Shoulder Bag</h2>
+                </NavLink>
                 <h3>
                   $34.54 <del>$43.53</del>
                 </h3>
@@ -109,7 +109,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image3">
               <span id="heart">
                 {" "}
@@ -120,10 +119,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Cozy Indoor Sandals</h2>
+                <NavLink to="/product">
+                  <h2>Cozy Indoor Sandals</h2>
+                </NavLink>
                 <h3>
                   $40.54 <del>$45.53</del>
                 </h3>
@@ -139,7 +139,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image4">
               <button id="limited">Limited</button>
               <span id="heart">
@@ -151,10 +150,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Thermo Cup</h2>
+                <NavLink to="/product">
+                  <h2>Thermo Cup</h2>
+                </NavLink>
                 <h3>
                   $14.54 <del>$23.53</del>
                 </h3>
@@ -170,7 +170,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image5">
               <span id="heart">
                 {" "}
@@ -181,10 +180,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Outdoor Vest</h2>
+                <NavLink to="/product">
+                  <h2>Outdoor Vest</h2>
+                </NavLink>
                 <h3>
                   $34.54 <del>$43.53</del>
                 </h3>
@@ -200,7 +200,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image6">
               <button id="limited">Limited</button>
               <span id="heart">
@@ -212,10 +211,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Face Cap</h2>
+                <NavLink to="/product">
+                  <h2>Face Cap</h2>
+                </NavLink>
                 <h3>
                   $10.54 <del>$15.53</del>
                 </h3>
@@ -231,7 +231,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image7">
               <span id="heart">
                 {" "}
@@ -242,10 +241,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Fuzzy Cardigan</h2>
+                <NavLink to="/product">
+                  <h2>Fuzzy Cardigan</h2>
+                </NavLink>
                 <h3>
                   $34.54 <del>$43.53</del>
                 </h3>
@@ -261,7 +261,6 @@ function LandingPage() {
             </div>
           </div>
           <div className="products">
-            <NavLink to="/product">
             <div className="product-image8">
               <span id="heart">
                 {" "}
@@ -272,10 +271,11 @@ function LandingPage() {
                 />{" "}
               </span>
             </div>
-            </NavLink>
             <div className="product-info">
               <aside>
-                <h2>Swivel Chair</h2>
+                <NavLink to="/product">
+                  <h2>Swivel Chair</h2>
+                </NavLink>
                 <h3>
                   $54.54 <del>$63.53</del>
                 </h3>
