@@ -336,7 +336,7 @@
   .about-product .desc p {
     width: 100%;
   }
-  .products-box .products {
+  .product-page .products-box .products {
     width: 49%;
   }
 }
@@ -348,7 +348,7 @@
 }
 
 @media (max-width: 450px) {
-  .products-box .products {
+  .product-page .products-box .products {
     width: 100%;
   }
   .my-product-box .product-nav .mobile li {
